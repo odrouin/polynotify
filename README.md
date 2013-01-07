@@ -8,3 +8,6 @@ que le programme vérifie vos notes.
 
 Appuyez sur "Démarrer" et laissez le logiciel rouler sur un ordinateur, vous recevrez ainsi une notification par courriel
 lorsqu'une nouvelle note apparaitra dans votre dossier étudiant! Plus besoin d'y aller aux 5 minutes quand vous attendez une note!
+
+*** L'installation de Java est nécessaire à l'exécution de ce logiciel. ***
+    Lien: http://www.java.com
