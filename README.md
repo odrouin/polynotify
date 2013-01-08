@@ -11,3 +11,6 @@ lorsqu'une nouvelle note apparaitra dans votre dossier étudiant! Plus besoin d'
 
 *** L'installation de Java est nécessaire à l'exécution de ce logiciel. ***
     Lien: http://www.java.com
+    
+    
+Par Olivier Drouin
