@@ -9,7 +9,12 @@ que le programme vérifie vos notes.
 Appuyez sur "Démarrer" et laissez le logiciel rouler sur un ordinateur, vous recevrez ainsi une notification par courriel
 lorsqu'une nouvelle note apparaitra dans votre dossier étudiant! Plus besoin d'y aller aux 5 minutes quand vous attendez une note!
 
+Notez qu'il est aussi possible de faire en sorte d'être notifié par SMS. Plusieurs fournisseurs de téléphones mobiles offrent
+une adresse de la forme "5145551111@msg.telus.com" pour pouvoir envoyer un SMS à un certain numéro de cellulaire. Si vous optez
+pour cette option, cochez la case "Message au format SMS" et le message envoyé sera adapté à l'envoi d'un SMS.
+
 *** L'installation de Java est nécessaire à l'exécution de ce logiciel. ***
+    
     Lien: http://www.java.com
     
     
