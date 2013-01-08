@@ -14,8 +14,7 @@ une adresse de la forme "5145551111@msg.telus.com" pour pouvoir envoyer un SMS �
 pour cette option, cochez la case "Message au format SMS" et le message envoyé sera adapté à l'envoi d'un SMS.
 
 *** L'installation de Java est nécessaire à l'exécution de ce logiciel. ***
-    
-    Lien: http://www.java.com
+Lien: http://www.java.com
     
     
 Par Olivier Drouin
