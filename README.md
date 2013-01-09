@@ -15,6 +15,9 @@ pour cette option, cochez la case "Message au format SMS" et le message envoyé 
 
 *** L'installation de Java est nécessaire à l'exécution de ce logiciel. ***
 Lien: http://www.java.com
-    
+
+Il est aussi important de préciser que le logiciel ne stocke pas vos informations d'authentification à quelque endroit que ce soit,
+ces dernières ne restent que des variables locales au sein du programme pour vérifier votre dossier étudiant régulièrement.
+Il n'y a donc absolument aucun danger à utiliser le logiciel!
     
 Par Olivier Drouin
