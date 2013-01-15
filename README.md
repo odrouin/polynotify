@@ -1,6 +1,6 @@
 -------------  PolyNotify  -------------
 
-Version du logiciel: 1.2
+Version du logiciel: 1.3
 
 À l'ouverture du logiciel, entrez votre code d'accès, votre mot de passe ainsi que votre date de naissance
 au format AAMMJJ pour que PolyNotify puisse accéder à votre dossier étudiant à l'adresse https://www4.polymtl.ca/poly/poly.html.
