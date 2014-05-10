@@ -138,7 +138,7 @@ public class NotifyWorker extends SwingWorker<Void, Void> {
 				}
 
 				int index, indexEnd;
-				index = webPage.indexOf("<tr><td width=\"125\">");
+				index = webPage.indexOf("<table width=\"75%\"");
 				indexEnd = webPage.indexOf("&nbsp;L&Eacute;GENDE") - 268;
 
 				if (index == -1) {
