@@ -36,7 +36,7 @@ import java.awt.event.WindowEvent;
 
 public class MainWindow {
 
-	private static final String APP_VERSION = "2.0";
+	private static final String APP_VERSION = "2.1";
 	private static final String NOM_FICHIER_CONFIG = "polynotify.config";
 
 	private JFrame frmPolynotify;
@@ -89,7 +89,7 @@ public class MainWindow {
 			try {
 				notifyWorker = new NotifyWorker(txtCodeUsager.getText(),
 						txtMDP.getText(), txtDateNaissance.getText(),
-						txtAdresseEnvoi.getText(), txtAdresseEnvoi.getText(),
+						txtAdresseReception.getText(), txtAdresseEnvoi.getText(),
 						txtMDPEnvoi.getText(), this);
 			} catch (GeneralSecurityException e) {
 				e.printStackTrace();

@@ -138,8 +138,8 @@ public class NotifyWorker extends SwingWorker<Void, Void> {
 				}
 
 				int index, indexEnd;
-				index = webPage.indexOf("<br>     N O T E S &#160;");
-				indexEnd = webPage.indexOf("&nbsp;L&Eacute;GENDE");
+				index = webPage.indexOf("<tr><td width=\"125\">");
+				indexEnd = webPage.indexOf("&nbsp;L&Eacute;GENDE") - 268;
 
 				if (index == -1) {
 					throw new NoConnectionException();
@@ -149,7 +149,7 @@ public class NotifyWorker extends SwingWorker<Void, Void> {
 						|| lastNotesContent.equals("")) {
 					win.writeMessage("Dernière vérification: " + actualTime());
 				} else {
-					sendEmailTo(emailTo, emailFrom, pwFrom);
+					sendEmailTo(webPage.substring(index, indexEnd) ,emailTo, emailFrom, pwFrom);
 				}
 
 				lastNotesContent = webPage.substring(index, indexEnd);
@@ -224,18 +224,17 @@ public class NotifyWorker extends SwingWorker<Void, Void> {
 		}
 	}
 
-	private void sendEmailTo(String to, final String from, final String pw) {
-		String text;
+	private void sendEmailTo(String html, final String to, final String from, final String pw) {
 
-		text = "https://www4.polymtl.ca/poly/poly.html";
+		Properties properties     = new Properties();
+		properties.put("mail.smtp.host", "smtp.gmail.com"); 
+		properties.put("mail.smtp.socketFactory.port", "465");
+		properties.put("mail.smtp.socketFactory.class",
+                                   "javax.net.ssl.SSLSocketFactory");
+		properties.put("mail.smtp.auth", "true");
+		properties.put("mail.smtp.port", "465");
 
-		Properties props = new Properties();
-		props.put("mail.smtp.auth", "true");
-		props.put("mail.smtp.starttls.enable", "true");
-		props.put("mail.smtp.host", "smtp.gmail.com");
-		props.put("mail.smtp.port", "587");
-
-		Session session = Session.getInstance(props,
+		Session session = Session.getInstance(properties,
 				new javax.mail.Authenticator() {
 					protected PasswordAuthentication getPasswordAuthentication() {
 						return new PasswordAuthentication(from, pw);
@@ -249,7 +248,7 @@ public class NotifyWorker extends SwingWorker<Void, Void> {
 			message.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(to));
 			message.setSubject("[PolyNotify] Avis de modification de note");
-			message.setText(text);
+			message.setContent(html, "text/html");   
 
 			Transport.send(message);
 
