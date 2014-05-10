@@ -1,4 +1,5 @@
--------------  PolyNotify  -------------
+PolyNotify
+==========
 
 Version: 2.1
 
